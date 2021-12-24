@@ -1,0 +1,111 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.container-fluid{
+  background: #dde1e7;
+  width: 100%;
+}
+.container-fluid img{
+  margin-left: 8.8rem;
+  width: 80%;
+  margin-top: 2rem;
+}
+.home{
+  position: absolute;
+  top: 50%;
+  transform: translate(-40%);
+}
+section{
+  background-color: #dde1e7;
+}
+.container{
+  background-color: #dde1e7;
+
+}
+.card{
+  background-color: black;
+}
+h1{
+  text-align: center;
+  margin-left: 7rem;
+}
+.section2 {
+  background-color: #dde1e7;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* line 46, ../../projeto-fylo/projeto-fylo/sass/estilo.sass */
+.section2-card {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-size: 34px;
+  color: #acacac;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 16px;
+  margin: 15px;
+  padding: 88px;
+}
+
+/* line 47, ../../projeto-fylo/projeto-fylo/sass/estilo.sass */
+.section2-card h4 {
+  font-size: 24px;
+}
+.section2-card img{
+  width: 200px;
+}
+.card{
+  background: #dde1e7;
+  border-radius: 20px;
+  box-shadow: inset 10px 10px 20px rgba(94, 104, 121, .288),inset -10px -10px 20px #ffffff89;
+}
+.card img{
+  width: 200px;
+  margin-left: 3rem;
+}
+.card a{
+  text-decoration: none;
+  color: #ff000f;
+  cursor: pointer;
+}
+.card a i{
+  color: #ff000f;
+}
+.tituloModal{
+  background-color: #ff000f;
+  color: white;
+}
+button{
+  background-color: #ff000f;
+  color: #dde1e7;
+  border: none;
+  border-radius: 15px;
+  height: 40px;
+}
+.buttons{
+  margin-left: 4.2rem;
+}
+.cancela{
+  background-color: darkgrey;
+  margin-right: 5px;
+}
+.minhaModal{
+  width: 300px;
+  height: 150px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #dde1e7;
+  box-shadow:  -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, .288);
+
+}
+h1{
+  margin-left: 1.7rem;
+}

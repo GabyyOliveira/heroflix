@@ -1,0 +1,13 @@
+footer{
+  position: absolute;
+  width: 100%;
+  margin-top: 50rem;
+  box-shadow: inset 10px 10px 20px rgba(94, 104, 121, .288), inset -10px -10px 20px #ffffff89;
+}
+.icons a i{
+  color:#ff000f;
+  box-shadow: 10px 10px 20px rgba(94, 104, 121, .288), -10px -10px 20px #ffffff89;
+}
+/* .copy{
+  box-shadow: inset 10px 10px 20px rgba(94, 104, 121, .288), inset -10px -10px 20px #ffffff89;
+} */

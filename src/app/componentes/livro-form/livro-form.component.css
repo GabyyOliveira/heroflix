@@ -1,0 +1,91 @@
+.cadastro{
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%, -40%);
+  width: 330px;
+  height: 600px;
+  border-radius: 40px;
+  background: #dde1e7;
+  box-shadow: 10px 10px 20px rgba(94, 104, 121, .288), -10px -10px 20px #ffffff89;
+
+}
+ .logo{
+  margin-top: 50px;
+  width: 80px;
+  height: 80px;
+  margin-left: 7.7rem;
+  border-radius: 50%;
+  box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, .288);
+}
+.logo img{
+  width: 100%;
+  margin-top: 8px;
+  height: 65px;
+
+}
+h4{
+  color: #950101;
+}
+.cadastro .campos{
+  margin-top: 30px;
+}
+.campos input{
+  width: 15rem;
+  height: 50px;
+  margin: 20px 10px 1rem 3rem;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  background: #dde1e7;
+  box-shadow: inset 10px 10px 20px rgba(94, 104, 121, .288), inset -10px -10px 20px #ffffff;
+}
+.cadastro button{
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 70%;
+  height: 50px;
+  font-size: 20px;
+  margin-left: 3rem;
+  color: #fff;
+  border-radius: 25px;
+  background: #950101;
+  box-shadow:  9px 9px 18px #b1b1b1,
+               -9px -9px 18px #ffffff;
+}
+.minhaModal{
+  width: 300px;
+  height: 150px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #dde1e7;
+  box-shadow:  -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, .288);
+
+}
+.tituloModal{
+  background-color: #ff000f;
+  color: white;
+}
+.buttons button{
+  background-color: #ff000f;
+  color: #dde1e7;
+  border: none;
+  border-radius: 15px;
+  height: 40px;
+  width: 100px;
+}
+.buttons .cancela{
+  background-color: darkgrey;
+  width:70px;
+  margin-left:7rem;
+  font-size: 14px;
+}
+.buttons .confirma{
+  width: 70px;
+  font-size: 14px;
+  margin-left: 20px;
+}

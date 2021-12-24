@@ -1,0 +1,47 @@
+<div class="container">
+  <table class="table ">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Diretor</th>
+        <th scope="col">Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of movies">
+        <th scope="row">{{item.id}}</th>
+        <td>{{item.nome}}</td>
+        <td>{{item.diretor}}</td>
+        <td>
+          <a (click)="editar(item.id)" class="mx-2 text-info"><i class="bi bi-pencil-square"></i></a>
+          <a (click)='mostrarModal(item.id)' class="text-info"><i class="bi bi-trash-fill"></i></a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!-- <div class="container2 d-flex flex-wrap justify-content-center">
+  <div class="card mt-4 mx-3" style="width: 18rem;" *ngFor="let item of movies">
+  <img [src]="item.foto" class="card-img-top p-4" alt="...">
+  <div class="card-body">
+    <h5 class="card-title text-center">{{item.nome}}</h5>
+    <p class="card-text text-center">{{item.diretor}}</p><br>
+    <a (click)="editar(item.id)" class="mx-2 fw-bolder"><i class="bi bi-pencil-square"></i>Editar</a>
+    <a (click)='mostrarModal(item.id)' class="fw-bolder" ><i class="bi bi-trash-fill"></i>Excluir</a>
+    <br><br>
+  </div>
+</div>
+</div> -->
+<div *ngIf="isModal">
+  <div class="minhaModal">
+    <div class="tituloModal">
+      <h5 class="text-center">Aviso!</h5>
+    </div>
+    <h6 class="my-4 text-center">Confirma essa operação?</h6>
+    <div class="buttons">
+      <button class="cancela" (click)="cancelarAcao()">Cancelar</button>
+      <button class="confirma" (click)="confirmarAcao()">Confirmar</button>
+    </div>
+  </div>
+</div>

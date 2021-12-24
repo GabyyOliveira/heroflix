@@ -1,0 +1,16 @@
+<div class="container align-items-center">
+  <div class="cadastro">
+    <div class="logo">
+      <img src="assets/h.png">
+    </div>
+    <h4 class="text-center mt-4">Editar Filme</h4>
+    <div class="campos">
+    <form #f="ngForm">
+      <input type="text" placeholder="Nome do filme..." name="nome" [(ngModel)]="movies.nome" ><br>
+      <input type="text" placeholder="Diretor..." name="diretor" [(ngModel)]="movies.diretor"><br><br><br>
+      <button (click)="editar()" type="button">Editar</button>
+      <!-- <button type="button" >Editar</button> -->
+    </form>
+  </div>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+<div class="container align-items-center">
+  <div class="cadastro">
+    <div class="logo">
+      <img src="assets/h.png">
+    </div>
+    <h4 class="text-center mt-4">Cadastro Filmes</h4>
+    <p class="text-center"><i>Edição também</i></p>
+    <div class="campos">
+    <form [formGroup]="form">
+      <input type="text" placeholder="Nome do filme..." formControlName="nome" ><br>
+      <input type="text" placeholder="Diretor..." formControlName="diretor" ><br>
+      <input type="text" placeholder="foto..." formControlName="foto" ><br><br>
+      <div *ngIf="verificarStatus; then cadastrar else editar"></div>
+      <ng-template #cadastrar><button type="button"(click)="mostrarModal()" >Cadastrar</button></ng-template>
+      <ng-template #editar><button type="button"(click)="salvar()" >Editar</button></ng-template>
+      <!-- <button type="button" >Editar</button> -->
+
+    </form>
+  </div>
+  </div>
+</div>
+<div *ngIf="mModal">
+  <div class="minhaModal">
+    <div class="tituloModal">
+      <h5 class="text-center">Aviso!</h5>
+    </div>
+    <h6 class="my-4 text-center">Deseja Realmente cadastrar este filme?</h6>
+    <div class="buttons">
+      <button class="cancela" (click)="cancelarAcao()">Cancelar</button>
+      <button class="confirma" (click)="confirmarAcao()">Confirmar</button>
+    </div>
+  </div>
+</div>
+
